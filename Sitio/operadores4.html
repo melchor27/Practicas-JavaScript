@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores4</title>
+</head>
+<body>
+    <button type="submit" onclick="boton()">Enviar</button>
+    <script>
+        function boton(){
+            alert("¿Que Operacion Deseas Realizar?");
+        let opcion=prompt("1.Suma\n 2.Resta\n 3.Multiplicacion\n 4.Division");
+
+        switch(opcion){
+            case "1":
+            let x1=prompt("Ingresa el primer numero");
+        let y1=prompt("Ingresa el segundo numero");
+        let suma=parseInt(x1)+parseInt(y1);
+        alert("La suma de los resultados es: " + suma);
+        break;
+
+        case "2":
+        let x2=prompt("Ingresa el primer numero");
+        let y2=prompt("Ingresa el segundo numero");
+        let resta=parseInt(x2)-parseInt(y2);
+        alert("La resta de los resultados es: " + resta);
+        break;
+
+        case "3": 
+        let x3=prompt("Ingresa el primer numero");
+        let y3=prompt("Ingresa el segundo numero");
+        let multiplicacion=parseInt(x3)*parseInt(y3);
+        alert("La multiplicacion de los resultados es: " + multiplicacion);
+        break;
+
+        case "4": 
+        let x4=prompt("Ingresa el primer numero");
+        let y4=prompt("Ingresa el segundo numero");
+        let division=parseInt(x4)-parseInt(y4);
+        if(y4==0){
+            alert("El valor es invalido");
+        }else{
+            alert("La division de los numeros es: " + division);
+            break;
+        }
+    }
+        }
+       
+    </script>
+    
+</body>
+</html>

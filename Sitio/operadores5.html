@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores 5</title>
+</head>
+<body>
+
+    <button type="submit" onclick="boton1()">suma</button>
+    <button type="submit" onclick="boton2()">resta</button>
+    <button type="submit" onclick="boton3()">division</button>
+    <button type="submit" onclick="boton4()">multiplicacion</button>
+
+    <script>
+ 
+ function boton1(){
+    let x1=prompt("Ingresa el primer numero");
+        let y1=prompt("Ingresa el segundo numero");
+        let suma=parseInt(x1)+parseInt(y1);
+        alert("La suma de los resultados es: " + suma);
+ }
+ function boton2(){
+    let x2=prompt("Ingresa el primer numero");
+        let y2=prompt("Ingresa el segundo numero");
+        let resta=parseInt(x2)-parseInt(y2);
+        alert("La resta de los resultados es: " + resta);
+ }
+ function boton3(){
+    let x3=prompt("Ingresa el primer numero");
+        let y3=prompt("Ingresa el segundo numero");
+        let division=parseInt(x3)/parseInt(y3);
+        if(y3==0){
+            alert("<br>El valor es invalido");
+        }else{
+            alert("La division de los numeros es: " + division);
+
+ }
+}
+ function boton4(){
+    let x4=prompt("Ingresa el primer numero");
+        let y4=prompt("Ingresa el segundo numero");
+        let multiplicacion=parseInt(x4)*parseInt(y4);
+        alert("La multiplicacion de los resultados es: " + multiplicacion);
+ }
+
+    </script>
+
+    
+       
+
+    
+</body>
+</html>
